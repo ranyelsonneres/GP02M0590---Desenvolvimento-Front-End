@@ -10,10 +10,16 @@ function carregarImagens(){
 
     switch (categoria) {
         case 'natureza':
-            imagens = ` estrutura natureza `;
+            imagens = `
+                <img src="img/natureza-1.jpg">
+                <img src="img/natureza-2.jpg">
+            `;
             break;
         case 'animais':
-            imagens= `estrutura imagens`;
+            imagens= `
+            <img src="img/animal-1.jpg">
+            <img src="img/animal-2.jpg">
+            `;
             break;
         default:
             imagens = `<p>Escolha a categoria</p>`;        
@@ -21,10 +27,20 @@ function carregarImagens(){
 
     carousel.innerHTML = imagens; //apresentar a imagem dentro da div carousel
 
+    mostrarSlide();
 
 }
 
 //mostrar imagens
+function mostrarSlide() {
+    const slides = document.querySelectorAll('.carousel img'); //selecionar a image
+
+    for (var i=0; i<slides.length; i++){
+        console.log(slides[i]);
+    }
+
+
+}
 
 //anteriorSlide
 
