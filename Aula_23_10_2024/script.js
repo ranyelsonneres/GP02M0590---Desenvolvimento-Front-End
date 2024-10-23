@@ -1,4 +1,4 @@
-
+let atualSlideIndex = 0;
 
 //carregar imagens
 function carregarImagens(){
@@ -27,6 +27,7 @@ function carregarImagens(){
 
     carousel.innerHTML = imagens; //apresentar a imagem dentro da div carousel
 
+    atualSlideIndex = 0;
     mostrarSlide();
 
 }
@@ -36,12 +37,33 @@ function mostrarSlide() {
     const slides = document.querySelectorAll('.carousel img'); //selecionar a image
 
     for (var i=0; i<slides.length; i++){
-        console.log(slides[i]);
+        //console.log(slides[i]);
+        if (i == atualSlideIndex ){
+            slides[i].style.display = 'block';
+        } else {
+            slides[i].style.display = 'none';
+        }
     }
-
 
 }
 
 //anteriorSlide
+function anteriorSlide(){
+    const slides = document.querySelectorAll('.carousel img'); 
+    if (atualSlideIndex > 0){
+        atualSlideIndex  --;
+    }
+
+    mostrarSlide()
+
+}
 
 //proximoSlide
+function proximoSlide(){
+    const slides = document.querySelectorAll('.carousel img'); 
+    if (atualSlideIndex < slides.length - 1){
+        atualSlideIndex  ++;
+    }
+
+    mostrarSlide()
+}
