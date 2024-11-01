@@ -29,3 +29,28 @@ console.log(pi); // 3.14
 ```
 ## DOM
 - Document Object Model (Modelo de Objeto de Documento), é uma interface de programação que permite a manipulação estruturada de documentos HTML e XML. Ele representa a estrutura do documento como uma árvore de objetos, onde cada nó da árvore corresponde a uma parte do documento (como elementos, atributos e texto).
+### Estrutur em árvore
+- No DOM, um documento HTML é representado como uma estrutura em forma de árvore. Cada elemento HTML (como ```<div>```, ```<p>```, ```<a>```, etc.) é um nó na árvore. O nó raiz é geralmente o documento em si, e cada elemento é um filho do nó que o contém.
+
+### Manipulação de elementos
+- O DOM permite que os desenvolvedores acessem, modifiquem, adicionem ou removam elementos da árvore. Isso é feito através de métodos e propriedades disponíveis na API do DOM. Por exemplo:
+- Acessar um elemento:
+```javascript
+const elemento = document.getElementById("meuElemento");
+
+```
+- Modificar conteúdo:
+```javascript
+elemento.innerHTML = "Novo Conteúdo"; // Altera o conteúdo HTML
+
+```
+
+### Eventos
+- O DOM também lida com eventos, permitindo que os desenvolvedores respondam a interações do usuário, como cliques, passagens de mouse e teclas pressionadas. Os eventos podem ser adicionados a elementos usando métodos como ```addEventListener()```.
+```javascript
+const botao = document.getElementById("meuBotao");
+botao.addEventListener("click", function() {
+  alert("Botão clicado!");
+});
+
+```
