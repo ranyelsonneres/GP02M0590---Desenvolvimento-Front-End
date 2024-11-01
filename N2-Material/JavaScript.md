@@ -54,3 +54,89 @@ botao.addEventListener("click", function() {
 });
 
 ```
+### Estrutas básicas
+### If e Else
+- As estruturas if e else permitem que você execute diferentes blocos de código com base em condições específicas.
+- Sintaxe básica:
+```javascript
+if (condição) {
+  // Código a ser executado se a condição for verdadeira
+} else {
+  // Código a ser executado se a condição for falsa
+}
+```
+- Exemplo:
+```javascript
+let idade = 20;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+```
+
+### For
+- A estrutura for é usada para executar um bloco de código um número específico de vezes. Ela é muito útil para iterar sobre arrays e coleções.
+- Sintaxe básica:
+```javascript
+for (inicialização; condição; incremento) {
+  // Código a ser executado em cada iteração
+}
+```
+- Exemplo:
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log("Número: " + i);
+}
+```
+
+### Switch-case
+- A estrutura switch-case é usada para executar um bloco de código com base na correspondência de um valor específico. É uma alternativa ao uso de múltiplas instruções if.
+- Sintaxe básica:
+```javascript
+switch (expressão) {
+  case valor1:
+    // Código a ser executado se expressão === valor1
+    break;
+  case valor2:
+    // Código a ser executado se expressão === valor2
+    break;
+  default:
+    // Código a ser executado se nenhum caso corresponder
+}
+```
+- Exemplo:
+```javascript
+let diaDaSemana = 3;
+let nomeDoDia;
+
+switch (diaDaSemana) {
+  case 1:
+    nomeDoDia = "Segunda-feira";
+    break;
+  case 2:
+    nomeDoDia = "Terça-feira";
+    break;
+  case 3:
+    nomeDoDia = "Quarta-feira";
+    break;
+  case 4:
+    nomeDoDia = "Quinta-feira";
+    break;
+  case 5:
+    nomeDoDia = "Sexta-feira";
+    break;
+  case 6:
+    nomeDoDia = "Sábado";
+    break;
+  case 7:
+    nomeDoDia = "Domingo";
+    break;
+  default:
+    nomeDoDia = "Dia inválido";
+}
+
+console.log(nomeDoDia); // Quarta-feira
+
+```
