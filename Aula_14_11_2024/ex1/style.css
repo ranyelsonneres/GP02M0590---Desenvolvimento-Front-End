@@ -1,0 +1,24 @@
+.carousel-item {
+    width: auto;
+    height: 500px;
+}
+
+.container{
+    margin: 10px;
+}
+
+.accordion {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.navbar {
+    margin: 10px;
+    border-radius: 5px;
+}
